@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'sinatra'
-require 'espeak-http'
+require 'espeak-ruby'
+
+include ESpeak
 
 get '/tts' do
   text = params.delete("t")
