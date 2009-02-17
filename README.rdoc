@@ -1,0 +1,15 @@
+= espeak-http
+
+Micro web app for Text-To-Speech conversion via HTTP powered by Ruby, Sinatra, lame, espeak and espeak-ruby.
+
+= Requirements 
+
+* http://www.ruby-lang.org - Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
+* http://www.sinatrarb.com - Sinatra is a DSL for quickly creating web-applications in Ruby with minimal effort 
+* http://lame.sourceforge.net - LAME is a high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL. 
+* http://espeak.sourceforge.net - eSpeak is a compact open source software speech synthesizer for English and other languages, for Linux and Windows. 
+* http://github.com/dejan/espeak-ruby  - espeak-ruby is a Ruby API for utilizing combination of 'espeak' and 'lame' command line programs to create Text-To-Speech mp3 files.
+
+== author
+
+Dejan Simic ~ http://rors.org
