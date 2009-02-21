@@ -1,11 +1,12 @@
-require 'rubygems'
-require 'sinatra'
-require 'espeak-ruby'
+%w(rubygems 
+   sinatra 
+   espeak-ruby
+   digest/sha1).each { |l| require l }
 
 include ESpeak
 
 get '/tts' do
-  text = params.delete("t")
-  
-  [200, {'Content-type' => 'audio/mpeg'}, File.read(espeak(text, params))]
+  filename = "tmp/#{Digest::SHA1.hexdigest(params.to_s)}.mp3"
+  espeak(filename, params) # unless filename exists
+  [200, {'Content-type' => 'audio/mpeg'}, File.read(filename)]
 end
