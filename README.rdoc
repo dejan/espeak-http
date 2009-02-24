@@ -10,6 +10,6 @@ espeak-http is a micro web app for Text-To-Speech conversion via HTTP powered by
 * http://espeak.sourceforge.net - eSpeak is a compact open source software speech synthesizer for English and other languages, for Linux and Windows
 * http://github.com/dejan/espeak-ruby  - espeak-ruby is small Ruby API for utilizing 'espeak' and 'lame' to create Text-To-Speech mp3 files.
 
-== author
+== Credits
 
-Dejan Simic ~ http://rors.org
+Author: {Dejan Simic}[http://github.com/dejan]
