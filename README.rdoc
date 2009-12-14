@@ -20,8 +20,8 @@ Try it out: http://localhost:4567/tts?text=Hello%20world
 
 = Live demo
 
-  http://espeak.rors.org:4567/tts?text=less%20is%20more&pitch=90&speed=100
-  http://espeak.rors.org:4567/tts?text=Parlez%20vous%20francais&voice=fr&pitch=60&speed=200
+  [http://espeak.rors.org:4567/tts?text=less%20is%20more&pitch=90&speed=100]
+  [http://espeak.rors.org:4567/tts?text=Parlez%20vous%20francais&voice=fr&pitch=60&speed=200]
 
 == Credits
 
