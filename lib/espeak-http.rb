@@ -6,7 +6,7 @@
 include ESpeak
 
 get '/' do
-  [200, {}, '<h1>It works!</h1>']
+  redirect 'http://rors.org/2010/10/21/espeak-ruby.html', 301
 end
 
 get '/tts' do
