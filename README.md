@@ -5,6 +5,8 @@ espeak-http is a micro web app for Text-To-Speech conversion via HTTP powered by
 ## Run
 
     docker run -it -p 9292:9292 desimic/espeak-http
+    
+And then use: http://localhost:9292/tts?text=hello%20world&pitch=90&speed=100
 
 ## Development
 
