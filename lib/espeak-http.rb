@@ -1,12 +1,16 @@
-%w(rubygems
-   sinatra
-   espeak
-   digest/sha1).each { |l| require l }
+# frozen_string_literal: true
 
-include ESpeak
+require 'roda'
+require 'espeak'
 
-get '/tts' do
-  filename = "tmp/#{Digest::SHA1.hexdigest(params.to_s)}.mp3"
-  ESpeak::Speech.new(params.delete('text'), params).save(filename)
-  [200, {'Content-type' => 'audio/mpeg'}, File.read(filename)]
+class EspeakHttp < Roda
+  include ESpeak
+
+  plugin :default_headers, 'Content-Type'=>'audio/mpeg'
+
+  route do |r|
+    r.get 'tts' do
+      ESpeak::Speech.new(r.params['text'], r.params).bytes
+    end
+  end
 end

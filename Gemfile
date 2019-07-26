@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'sinatra'
+gem 'roda'
 gem 'puma'
-gem 'espeak-ruby', '~> 1.0.4'
+gem 'espeak-ruby'

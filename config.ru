@@ -1,3 +1,10 @@
-require File.expand_path("../lib/espeak-http", __FILE__)
+# frozen_string_literal: true
 
-run Sinatra::Application
+require 'rubygems'
+require 'bundler'
+
+Bundler.require
+
+require './lib/espeak-http'
+
+run EspeakHttp.freeze.app
