@@ -1,6 +1,6 @@
 # espeak-http
 
-espeak-http is a micro web app for Text-To-Speech conversion via HTTP powered by Ruby, Sinatra, lame, espeak and espeak-ruby.
+espeak-http is a micro web app for Text-To-Speech conversion via HTTP powered by Ruby, Roda, lame, espeak and espeak-ruby.
 
 ## Run
 
