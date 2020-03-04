@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     espeak-ruby (1.0.4)
-    puma (3.11.4)
+    puma (3.12.4)
     rack (2.0.7)
     roda (3.22.0)
       rack
