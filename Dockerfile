@@ -1,7 +1,7 @@
-FROM ruby:2.5.1-alpine
+FROM ruby:3.0.2-alpine
 
 RUN apk --update add --virtual build-dependencies ruby-dev build-base espeak lame
-RUN gem install bundler --no-ri --no-rdoc
+RUN gem install bundler
 
 ADD Gemfile /app/
 ADD Gemfile.lock /app/
